@@ -20,6 +20,12 @@ a:focus, a:hover {
 body {
 	font-family: 'Noto Serif', serif;
 	font-size: 18px;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	margin: 0;
+	padding: 0;
 }
 
 h1, h2 {
@@ -39,10 +45,14 @@ h2 {
 
 header {
 	text-align: center;
+	background-color: sandybrown; 
+    padding: 10px;
+	grid-column: 1 / -1; 
 }
 
 main {
-
+    background-color: white; 
+    padding: 20px;
 }
 
 p {
@@ -52,20 +62,51 @@ p {
 
 #intro {
 	font-size: 22px;
+	font-family: 'Roboto Mono', monospace; 
+	background-color:white; 
+	padding: 10px;
+	border-left: 5px solid #4783b4; 
+	margin-bottom: 1rem;
 }
 
 #automotive, #maritime, #medical, #physics, #myths {
-
+	font-family: 'Roboto Mono', monospace;
+	padding: 15px;
+	margin: 10px 0;
+	border-radius: 5px;
+	background-color:whitesmoke; 
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1)
 }
 
 #footer-container {
+	grid-column: 1 / -1;
+	grid-row: 3;
+    background-color: aquamarine; 
+    text-align: center;
+	padding:20px;
 	
 }
 
 #header-container {
-
+	grid-row: 1;
+	grid-column: 1 / -1;
 }
 
 #main-container {
+	display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    gap: 20px;
+    grid-column: 1 / -1;
+}
 
+nav{
+	background-color:whitesmoke; 
+	padding: 10px;
+	border-right: 2px solid grey; 
+
+}
+aside {
+	background-color:whitesmoke; 
+	padding: 10px;
+	border-left: 2px solid grey; 
 }
